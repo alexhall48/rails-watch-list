@@ -5,3 +5,5 @@
   <%= f.association :movie, collection: Movie.all.order(:title) %>
   <%= f.submit class: "btn btn-primary mt-3" %>
 <% end %>
+
+ <%= link_to 'Go back', lists_path, class: "btn btn-danger mt-3" %>
