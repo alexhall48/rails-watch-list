@@ -1,0 +1,9 @@
+<h1>List Index</h1>
+
+<ul>
+<% @lists.each do |list| %>
+<li><%= link_to list.name, list_path(list) %></li>
+<% end %>
+</ul>
+
+<p><%= link_to 'Add a new list', new_list_path(@list), class: "btn btn-primary mt-3"%></p>
